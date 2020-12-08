@@ -1,0 +1,24 @@
+@import "./help/vars_and_mixins.scss";
+@import "./help/media_mixins.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+p {
+  color: white;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}

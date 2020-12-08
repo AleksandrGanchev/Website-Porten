@@ -1,0 +1,90 @@
+.season-top {
+  background-color: black;
+  @include flex(space-between, stretch, row);
+  &-container {
+    width: 54%;
+    padding: 95px 80px;
+  }
+  &-catalog-title-wrapper {
+    position: relative;
+    @include flex(center, center, row);
+    font-family: "PlayfairyBold";
+    font-size: 36px;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 1px;
+      background-color: white;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+  }
+  &-catalog {
+    @include flex(space-between, center, row);
+
+    &-item {
+      width: 32%;
+      font-family: "PlayfairyRegular";
+      font-size: 18px;
+
+      &-title {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-item-wrapper {
+      max-width: 260px;
+      width: 100%;
+      height: 325px;
+      @include flex(center, center, row);
+      background-color: #191b1c;
+      margin-bottom: 25px;
+    }
+  }
+  &-new-catalog {
+    width: 46%;
+    background: url(../img/catalog.png) no-repeat center/cover;
+    padding-bottom: 100px;
+  }
+}
+
+.new-catalog {
+  @include flex(center, flex-end, row);
+  &-title {
+    position: relative;
+    font-family: "PlayfairyBold";
+    font-size: 36px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 1px;
+      background-color: white;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+  }
+  &-button {
+    border: 1px solid white;
+    width: fit-content;
+    padding: 12px 28px;
+    font-family: "PTRegular";
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  &-wrapper {
+    @include flex(center, center, column);
+    cursor: pointer;
+  }
+}

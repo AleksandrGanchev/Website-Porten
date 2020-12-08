@@ -1,0 +1,113 @@
+.header {
+  background-color: #000000;
+  font-family: "PT Sans", sans-serif;
+
+  a {
+    &:hover {
+      color: white;
+    }
+  }
+
+  &-top {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #969696;
+    font-size: 12px;
+
+    &-left {
+      @include flex(center, center, row);
+    }
+
+    &-right {
+      @include flex(center, center, row);
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &-bottom {
+    height: 80px;
+    background-color: #0f0f0f;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-nav-wrapper {
+    max-width: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-nav-item-wrapper {
+    @include flex(center, center, row);
+    color: $grey;
+    text-transform: uppercase;
+  }
+
+  &-nav-item {
+    height: 100%;
+    padding: 0 20px;
+    a {
+      @include flex(center, center, row);
+      width: 100%;
+      height: 100%;
+      color: #969696;
+    }
+    &:hover {
+      background-color: #1f1f1f;
+      cursor: pointer;
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.info {
+  @include flex(center, center, row);
+  color: #969696;
+  a {
+    color: #969696;
+  }
+}
+
+.sign a {
+  color: #969696;
+}
+
+.info-link {
+  border-left: 1px solid #969696;
+  padding-left: 10px;
+  margin-left: 10px;
+  &:first-child {
+    border-left: none;
+    padding-left: 0px;
+  }
+}
+
+.logo-wrapper {
+  height: 100%;
+  @include flex(center, center, row);
+}
+
+.nav-wrapper {
+  @include flex(center, center, row);
+  cursor: pointer;
+}
+
+.item-wrapper {
+  height: 100%;
+  padding: 0 20px;
+  @include flex(center, center, row);
+  &:last-child {
+    padding: 0;
+  }
+}
+
+//наслен.
+// .class {
+//   @extend .item-wrapper;
+// }

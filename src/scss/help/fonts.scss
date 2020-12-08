@@ -1,0 +1,25 @@
+// @import "bourbon";
+
+@font-face {
+  font-family: "PlayfairyBold";
+  src: url("../../fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "PlayfairyRegular";
+  src: url("../../fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "PTRegular";
+  src: url("../../fonts/PTSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}

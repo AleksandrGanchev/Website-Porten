@@ -1,0 +1,59 @@
+.banner {
+  padding: 160px 0;
+  background: url(../img/banner.jpg) no-repeat center/cover;
+}
+
+.banner-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-logo-wrapper {
+  max-width: 320px;
+  width: 100%;
+  min-height: 320px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid white;
+  margin-bottom: 80px;
+}
+
+.logo-banner-wrapper {
+  border-bottom: 2px solid white;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  margin-bottom: 8px;
+}
+
+.logo-banner {
+  margin-bottom: 8px;
+}
+
+.city {
+  text-transform: uppercase;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+}
+
+.banner-text-wrapper {
+  max-width: 730px;
+  width: 100%;
+}
+
+.banner-text {
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 24px;
+  text-align: center;
+}
