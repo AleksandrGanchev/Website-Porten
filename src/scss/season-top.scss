@@ -1,10 +1,12 @@
 .season-top {
   background-color: black;
   @include flex(space-between, stretch, row);
+
   &-container {
     width: 54%;
     padding: 95px 80px;
   }
+
   &-catalog-title-wrapper {
     position: relative;
     @include flex(center, center, row);
@@ -25,6 +27,7 @@
       transform: translateX(-50%);
     }
   }
+
   &-catalog {
     @include flex(space-between, center, row);
 
@@ -56,6 +59,7 @@
 
 .new-catalog {
   @include flex(center, flex-end, row);
+
   &-title {
     position: relative;
     font-family: "PlayfairyBold";

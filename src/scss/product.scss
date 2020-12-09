@@ -1,0 +1,61 @@
+.product {
+  background-color: black;
+
+  &__container {
+    padding: 120px 0 110px 0;
+  }
+}
+
+.product-wrapper {
+  @include flex(center, center, column);
+
+  &__title {
+    position: relative;
+    font-family: "PlayfairyRegular";
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 1px;
+      background-color: white;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.product-item {
+  width: 25%;
+  font-family: "PlayfairyBold";
+
+  &__product-clock {
+    width: 260px;
+    height: 325px;
+    @include flex(center, center, row);
+    background-color: #191b1c;
+    margin-bottom: 25px;
+  }
+
+  &__item-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  &__item-price {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+.product-item-wrapper {
+  max-width: 1110px;
+  width: 100%;
+  @include flex(center, space-between, row);
+  flex-wrap: wrap;
+}
