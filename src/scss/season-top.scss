@@ -82,9 +82,10 @@
     font-family: "PTRegular";
     text-transform: uppercase;
     font-size: 18px;
+    cursor: pointer;
   }
+
   &-wrapper {
     @include flex(center, center, column);
-    cursor: pointer;
   }
 }

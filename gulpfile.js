@@ -203,8 +203,8 @@ function images() {
 			// 		quality: 70,
 			// 	})
 			// )
-			.pipe(dest(path.build.img))
-			.pipe(src(path.src.img))
+			// .pipe(dest(path.build.img))
+			// .pipe(src(path.src.img))
 			.pipe(
 				cache(
 					imagemin([

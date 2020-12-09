@@ -1,0 +1,71 @@
+.season-bottom {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+  }
+
+  &__left {
+    width: 46%;
+    background: url(../img/collection.png) no-repeat center/cover;
+  }
+
+  &__right {
+    width: 54%;
+    padding: 100px 0;
+  }
+}
+
+.right {
+  &__info {
+    @include flex(center, center, column);
+    text-align: center;
+  }
+
+  &__button {
+    @include flex(center, center, row);
+  }
+}
+
+.info {
+  padding-bottom: 60px;
+
+  &__title {
+    position: relative;
+    font-family: "PlayfairyRegular";
+    font-size: 36px;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 120px;
+      height: 1px;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      background-color: white;
+    }
+  }
+
+  &__text {
+    max-width: 470px;
+    width: 100%;
+    font-family: "PTRegular";
+    line-height: 21px;
+    font-size: 14px;
+  }
+}
+
+.button {
+  &__catalog {
+    padding: 12px 28px;
+    font-family: "PTRegular";
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+}
