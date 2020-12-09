@@ -32,22 +32,24 @@
 
 .product-item {
   width: 25%;
-  font-family: "PlayfairyBold";
 
   &__product-clock {
-    width: 260px;
-    height: 325px;
+    max-width: 260px;
+    width: 100%;
+    min-height: 325px;
     @include flex(center, center, row);
     background-color: #191b1c;
     margin-bottom: 25px;
   }
 
   &__item-title {
+    font-family: "PlayfairyRegular";
     font-size: 18px;
     margin-bottom: 10px;
   }
 
   &__item-price {
+    font-family: "PlayfairyBold";
     font-size: 16px;
     margin-bottom: 40px;
   }

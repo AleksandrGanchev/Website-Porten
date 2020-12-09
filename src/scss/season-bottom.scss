@@ -17,7 +17,7 @@
 }
 
 .right {
-  &__info {
+  &__info-season {
     @include flex(center, center, column);
     text-align: center;
   }
@@ -27,7 +27,7 @@
   }
 }
 
-.info {
+.info-season {
   padding-bottom: 60px;
 
   &__title {
