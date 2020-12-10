@@ -1,0 +1,99 @@
+.mailing {
+  background: url(../img/mailing.png) no-repeat center/cover;
+  padding: 80px 0 120px 0;
+
+  &-wrapper {
+    @include flex(center, space-between, row);
+  }
+
+  &-box {
+    &__title {
+      font-family: "PlayfairyRegular";
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    &__info-mailing {
+      font-family: "PTRegular";
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 35px;
+    }
+
+    &__mail-button {
+      padding: 14px 20px;
+      background-color: black;
+      color: white;
+      font-family: "PTRegular";
+      font-size: 14px;
+      text-transform: uppercase;
+      cursor: pointer;
+      outline: none;
+      border: none;
+    }
+
+    &__mailing-input-wrapper {
+      @include flex(stretch, center, row);
+    }
+  }
+}
+
+.info-shop {
+  max-width: 350px;
+  width: 100%;
+  padding-right: 30px;
+
+  &__title {
+    font-family: "PlayfairyRegular";
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  &__info-mailing {
+    font-family: "PTRegular";
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.category {
+  max-width: 280px;
+  width: 100%;
+  margin-right: 90px;
+
+  &__title {
+    font-family: "PlayfairyRegular";
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+}
+
+.category-product-wrapper {
+  @include flex(space-between, center, row);
+  flex-wrap: wrap;
+  cursor: pointer;
+
+  &__category-product {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #0f0f0f;
+    margin-bottom: 20px;
+  }
+}
+
+.input-wrapper {
+  max-width: 210px;
+  width: 100%;
+  height: 42px;
+  background-color: white;
+  @include flex(center, center, row);
+  opacity: 0.4;
+
+  &__mail-input {
+    border: none;
+    outline: none;
+  }
+}

@@ -1,0 +1,19 @@
+.footer {
+  background-color: #0f0f0f;
+  padding: 15px 0;
+
+  &__footer-wrapper {
+    @include flex(space-between, center, row);
+    font-family: "PTRegular";
+    font-size: 12px;
+  }
+
+  &__protection {
+    color: #d0d0d0;
+  }
+
+  &__figma {
+    color: #d0d0d0;
+    cursor: pointer;
+  }
+}
