@@ -1,6 +1,22 @@
 .banner {
   padding: 160px 0;
   background: url(../img/banner.jpg) no-repeat center/cover;
+
+  @include desktop_xl {
+    padding: 80px 0;
+  }
+
+  @include tablet_md {
+    padding: 80px 20px;
+  }
+
+  @include mobile {
+    padding: 45px 20px;
+  }
+
+  @include mobile_sm {
+    padding: 30px 20px;
+  }
 }
 
 .banner-wrapper {
@@ -21,18 +37,46 @@
   flex-direction: column;
   border: 5px solid white;
   margin-bottom: 80px;
+
+  @include tablet_md {
+    max-width: 250px;
+    min-height: 250px;
+  }
+
+  @include mobile_sm {
+    max-width: 200px;
+    min-height: 200px;
+  }
+
+  @include mobile {
+    margin-bottom: 40px;
+  }
+
+  @include mobile_sm {
+    margin-bottom: 20px;
+  }
 }
 
 .logo-banner-wrapper {
+  width: 208px;
   border-bottom: 2px solid white;
   text-align: center;
   text-transform: uppercase;
   color: white;
   font-family: "PT Sans", sans-serif;
   margin-bottom: 8px;
+
+  @include mobile {
+    max-width: 170px;
+  }
+
+  @include mobile_sm {
+    max-width: 135px;
+  }
 }
 
 .logo-banner {
+  width: 100%;
   margin-bottom: 8px;
 }
 
@@ -41,6 +85,14 @@
   color: white;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
+
+  @include mobile {
+    font-size: 18px;
+  }
+
+  @include mobile_sm {
+    font-size: 14px;
+  }
 }
 
 .banner-text-wrapper {
@@ -56,4 +108,14 @@
   text-transform: uppercase;
   line-height: 24px;
   text-align: center;
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @include mobile_sm {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }

@@ -88,12 +88,17 @@
   max-width: 210px;
   width: 100%;
   height: 42px;
-  background-color: white;
   @include flex(center, center, row);
-  opacity: 0.4;
 
   &__mail-input {
+    padding: 11px 12px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgb(255, 255, 255);
     border: none;
     outline: none;
+
+    &::placeholder {
+      color: rgb(255, 255, 255);
+    }
   }
 }

@@ -15,6 +15,14 @@
     color: #969696;
     font-size: 12px;
 
+    @include desktop {
+      padding: 16px;
+    }
+
+    @include mobile {
+      padding: 16px 10px;
+    }
+
     &-left {
       @include flex(center, center, row);
     }
@@ -28,10 +36,17 @@
   }
 
   &-bottom {
-    height: 80px;
     background-color: #0f0f0f;
+  }
+
+  &-bottom-wrapper {
+    height: 80px;
     display: flex;
     justify-content: space-between;
+
+    @include desktop {
+      padding: 0 16px;
+    }
   }
 
   &-nav-wrapper {
@@ -56,6 +71,16 @@
       height: 100%;
       color: #969696;
     }
+
+    @include tablet_md {
+      font-size: 12px;
+      padding: 0 10px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+
     &:hover {
       background-color: #1f1f1f;
       cursor: pointer;
@@ -69,6 +94,14 @@
 .info {
   @include flex(center, center, row);
   color: #969696;
+
+  :nth-child(2),
+  :nth-child(3) {
+    @include mobile {
+      display: none;
+    }
+  }
+
   a {
     color: #969696;
   }
@@ -87,6 +120,11 @@
     border-left: none;
     padding-left: 0px;
   }
+
+  @include mobile {
+    padding-left: 5px;
+    margin-left: 5px;
+  }
 }
 
 .logo-wrapper {
@@ -103,12 +141,8 @@
   height: 100%;
   padding: 0 20px;
   @include flex(center, center, row);
+
   &:last-child {
     padding: 0;
   }
 }
-
-//наслен.
-// .class {
-//   @extend .item-wrapper;
-// }
