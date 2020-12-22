@@ -2,6 +2,10 @@
   background-color: #0f0f0f;
   padding: 15px 0;
 
+  @include desktop {
+    padding: 15px 10px;
+  }
+
   &__footer-wrapper {
     @include flex(space-between, center, row);
     font-family: "PTRegular";

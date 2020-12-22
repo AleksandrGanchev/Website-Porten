@@ -95,9 +95,14 @@
   @include flex(center, center, row);
   color: #969696;
 
-  :nth-child(2),
-  :nth-child(3) {
+  :nth-child(2) {
     @include mobile {
+      display: none;
+    }
+  }
+
+  :nth-child(3) {
+    @include mobile_sm {
       display: none;
     }
   }
@@ -116,6 +121,7 @@
   padding-left: 10px;
   margin-left: 10px;
   color: #969696;
+
   &:first-child {
     border-left: none;
     padding-left: 0px;

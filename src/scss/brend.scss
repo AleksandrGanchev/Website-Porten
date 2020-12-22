@@ -2,7 +2,11 @@
   background-color: #0f0f0f;
 
   &__container {
-    padding: 60px 0 80px 0;
+    padding: 60px 10px 80px 10px;
+
+    @include tablet_md {
+      padding: 50px 10px;
+    }
   }
 }
 
@@ -14,8 +18,17 @@
     font-family: "PlayfairyRegular";
     font-size: 36px;
     text-transform: uppercase;
+    text-align: center;
     margin-bottom: 40px;
     padding-bottom: 40px;
+
+    @include mobile {
+      font-size: 30px;
+    }
+
+    @include mobile_sm {
+      font-size: 22px;
+    }
 
     &:before {
       content: "";
@@ -36,5 +49,9 @@
 
   &__coco {
     margin-left: 30px;
+
+    @include tablet_md {
+      margin-left: 0;
+    }
   }
 }

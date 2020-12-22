@@ -2,9 +2,29 @@
   background-color: black;
   @include flex(space-between, stretch, row);
 
+  @include tablet_md {
+    flex-direction: column;
+  }
+
   &-container {
     width: 54%;
     padding: 95px 80px;
+
+    @include desktop {
+      padding: 80px 40px;
+    }
+
+    @include tablet_md {
+      width: 100%;
+    }
+
+    @include mobile {
+      padding: 50px 20px;
+    }
+  }
+
+  &-title {
+    text-align: center;
   }
 
   &-catalog-title-wrapper {
@@ -15,6 +35,22 @@
     text-transform: uppercase;
     padding-bottom: 50px;
     margin-bottom: 100px;
+
+    @include tablet_md {
+      margin-bottom: 80px;
+    }
+
+    @include mobile {
+      font-size: 30px;
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+    }
+
+    @include mobile_sm {
+      font-size: 22px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
 
     &:before {
       content: "";
@@ -36,6 +72,14 @@
       font-family: "PlayfairyRegular";
       font-size: 18px;
 
+      @include mobile {
+        text-align: center;
+      }
+
+      @include mobile_sm {
+        font-size: 12px;
+      }
+
       &-title {
         margin-bottom: 10px;
       }
@@ -44,16 +88,37 @@
     &-item-wrapper {
       max-width: 260px;
       width: 100%;
-      height: 325px;
       @include flex(center, center, row);
       background-color: #191b1c;
       margin-bottom: 25px;
+    }
+
+    img {
+      margin: 55px 0;
+      width: 100%;
+
+      @include mobile {
+        margin: 50px 0;
+      }
+
+      @include mobile_sm {
+        margin: 30px 0;
+      }
     }
   }
   &-new-catalog {
     width: 46%;
     background: url(../img/catalog.png) no-repeat center/cover;
     padding-bottom: 100px;
+
+    @include tablet_md {
+      padding: 80px 0;
+      width: 100%;
+    }
+
+    @include mobile {
+      padding: 50px 0;
+    }
   }
 }
 
@@ -65,8 +130,23 @@
     font-family: "PlayfairyBold";
     font-size: 36px;
     text-transform: uppercase;
-    padding-bottom: 30px;
+    padding: 0 10px 30px 10px;
     margin-bottom: 60px;
+    text-align: center;
+
+    @include tablet_md {
+      margin-bottom: 40px;
+    }
+
+    @include mobile {
+      font-size: 30px;
+    }
+
+    @include mobile_sm {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
 
     &:before {
       content: "";

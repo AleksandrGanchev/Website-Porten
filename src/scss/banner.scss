@@ -11,7 +11,7 @@
   }
 
   @include mobile {
-    padding: 45px 20px;
+    padding: 50px 20px;
   }
 
   @include mobile_sm {
@@ -43,16 +43,13 @@
     min-height: 250px;
   }
 
-  @include mobile_sm {
-    max-width: 200px;
-    min-height: 200px;
-  }
-
   @include mobile {
     margin-bottom: 40px;
   }
 
   @include mobile_sm {
+    max-width: 200px;
+    min-height: 200px;
     margin-bottom: 20px;
   }
 }
@@ -65,6 +62,10 @@
   color: white;
   font-family: "PT Sans", sans-serif;
   margin-bottom: 8px;
+
+  @include tablet_md {
+    max-width: 190px;
+  }
 
   @include mobile {
     max-width: 170px;
@@ -85,6 +86,10 @@
   color: white;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
+
+  @include tablet_md {
+    font-size: 20px;
+  }
 
   @include mobile {
     font-size: 18px;

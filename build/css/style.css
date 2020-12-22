@@ -388,6 +388,10 @@ p {
   margin: 0 auto;
 }
 
+.img {
+  width: 100%;
+}
+
 .banner {
   padding: 160px 0;
   background: url(../img/banner.jpg) no-repeat center/cover;
@@ -481,7 +485,7 @@ p {
 }
 
 .brend__container {
-  padding: 60px 0 80px 0;
+  padding: 60px 10px 80px 10px;
 }
 
 .brend-wrapper {
@@ -509,6 +513,7 @@ p {
   font-family: "PlayfairyRegular";
   font-size: 36px;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 40px;
   padding-bottom: 40px;
 }
@@ -989,6 +994,7 @@ p {
   padding: 10px 20px;
   background-color: #0f0f0f;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .input-wrapper {
@@ -1265,6 +1271,7 @@ p {
   font-family: "PTRegular";
   font-size: 18px;
   text-transform: uppercase;
+  text-align: center;
   border: 1px solid white;
   letter-spacing: 10%;
   cursor: pointer;
@@ -1294,6 +1301,10 @@ p {
 .season-top-container {
   width: 54%;
   padding: 95px 80px;
+}
+
+.season-top-title {
+  text-align: center;
 }
 
 .season-top-catalog-title-wrapper {
@@ -1368,7 +1379,6 @@ p {
 .season-top-catalog-item-wrapper {
   max-width: 260px;
   width: 100%;
-  height: 325px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1388,6 +1398,11 @@ p {
           flex-direction: row;
   background-color: #191b1c;
   margin-bottom: 25px;
+}
+
+.season-top-catalog img {
+  margin: 55px 0;
+  width: 100%;
 }
 
 .season-top-new-catalog {
@@ -1421,8 +1436,9 @@ p {
   font-family: "PlayfairyBold";
   font-size: 36px;
   text-transform: uppercase;
-  padding-bottom: 30px;
+  padding: 0 10px 30px 10px;
   margin-bottom: 60px;
+  text-align: center;
 }
 
 .new-catalog-title:before {
@@ -1492,12 +1508,89 @@ p {
 }
 
 @media (max-width: 1200px) {
+  .footer {
+    padding: 15px 10px;
+  }
+
   .header-top {
     padding: 16px;
   }
 
   .header-bottom-wrapper {
     padding: 0 16px;
+  }
+
+  .mailing {
+    padding: 80px;
+  }
+
+  .mailing-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .mailing-box__title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .mailing-box__info-mailing {
+    text-align: center;
+  }
+
+  .mailing-box__mailing-input-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .info-shop {
+    max-width: none;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .info-shop__title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .info-shop__info-mailing {
+    margin-bottom: 40px;
+  }
+
+  .category {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .category__title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .season-bottom__right {
+    padding: 80px 40px;
+  }
+
+  .season-top-container {
+    padding: 80px 40px;
   }
 }
 
@@ -1511,15 +1604,60 @@ p {
     min-height: 250px;
   }
 
+  .logo-banner-wrapper {
+    max-width: 190px;
+  }
+
+  .city {
+    font-size: 20px;
+  }
+
+  .brend__container {
+    padding: 50px 10px;
+  }
+
+  .brend-catalog__coco {
+    margin-left: 0;
+  }
+
   .header-nav-item {
     font-size: 12px;
     padding: 0 10px;
+  }
+
+  .mailing {
+    padding: 50px;
+  }
+
+  .season-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .season-top-container {
+    width: 100%;
+  }
+
+  .season-top-catalog-title-wrapper {
+    margin-bottom: 80px;
+  }
+
+  .season-top-new-catalog {
+    padding: 80px 0;
+    width: 100%;
+  }
+
+  .new-catalog-title {
+    margin-bottom: 40px;
   }
 }
 
 @media (max-width: 576px) {
   .banner {
-    padding: 45px 20px;
+    padding: 50px 20px;
   }
 
   .banner-logo-wrapper {
@@ -1539,6 +1677,10 @@ p {
     line-height: 20px;
   }
 
+  .brend-wrapper__title {
+    font-size: 30px;
+  }
+
   .header-top {
     padding: 16px 10px;
   }
@@ -1547,14 +1689,57 @@ p {
     display: none;
   }
 
-  .info :nth-child(2),
-  .info :nth-child(3) {
+  .info :nth-child(2) {
     display: none;
   }
 
   .info-link {
     padding-left: 5px;
     margin-left: 5px;
+  }
+
+  .mailing {
+    padding: 50px 20px;
+  }
+
+  .season-bottom__left {
+    width: 0;
+    background: none;
+  }
+
+  .season-bottom__right {
+    width: 100%;
+    padding: 50px 20px;
+  }
+
+  .info-season__title {
+    font-size: 30px;
+  }
+
+  .season-top-container {
+    padding: 50px 20px;
+  }
+
+  .season-top-catalog-title-wrapper {
+    font-size: 30px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+
+  .season-top-catalog-item {
+    text-align: center;
+  }
+
+  .season-top-catalog img {
+    margin: 50px 0;
+  }
+
+  .season-top-new-catalog {
+    padding: 50px 0;
+  }
+
+  .new-catalog-title {
+    font-size: 30px;
   }
 }
 
@@ -1566,9 +1751,6 @@ p {
   .banner-logo-wrapper {
     max-width: 200px;
     min-height: 200px;
-  }
-
-  .banner-logo-wrapper {
     margin-bottom: 20px;
   }
 
@@ -1583,5 +1765,65 @@ p {
   .banner-text {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .brend-wrapper__title {
+    font-size: 22px;
+  }
+
+  .info :nth-child(3) {
+    display: none;
+  }
+
+  .mailing-box__mailing-input-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .category__category-product-wrapper :first-child {
+    margin-right: 10px;
+  }
+
+  .category-product-wrapper {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .input-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .input-wrapper__mail-input {
+    padding: 11px 20px;
+    text-align: center;
+  }
+
+  .info-season__title {
+    font-size: 22px;
+  }
+
+  .season-top-catalog-title-wrapper {
+    font-size: 22px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .season-top-catalog-item {
+    font-size: 12px;
+  }
+
+  .season-top-catalog img {
+    margin: 30px 0;
+  }
+
+  .new-catalog-title {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
   }
 }
