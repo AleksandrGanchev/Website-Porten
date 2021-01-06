@@ -71,11 +71,99 @@
 
 /*Дан массив с элементами [2, 3, 4, 5]. С помощью цикла for найдите произведение элементов этого массива.*/
 
-// let arr = [2,3,4,5];
-// let sum = 0;
+// function a (vvv) {
+//     let sum = vvv[0];
+//     for (let i = 0; i < vvv.length - 1; i++) {
+//         sum = sum * vvv[i+1]
+//      } 
 
-// for (let i = 0; i < arr.length; i++) {
-//    sum *= arr[i];
-//    console.log(sum);
+//      console.log(sum);
 // } 
 
+// a([1,2,6]);
+
+
+// let getSumm = function (arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++ ) {
+//         if (arr[i] > 0) {
+//             sum = sum + arr[i];
+//         }
+//     }
+//     console.log(sum);
+// }
+
+// getSumm([1,-2,11,-7])
+
+/* Напишите функцию min(a,b), которая возвращает меньшее из чисел a и b. */
+
+// function getChislo(a, b) {
+//   if (a < b) {
+//     return a;
+//   } else {
+//     return b;
+//   }
+// }
+
+// console.log (getChislo(2, 5)); 
+// console.log (getChislo(3, -1));
+// console.log (getChislo(1, 1));
+
+/* Напишите функцию pow(x,n), которая возвращает x в степени n. Иначе говоря, умножает x на себя n раз и возвращает результат. */
+
+// function ask(question, yes, no) {
+//   if (confirm(question)) yes()
+//   else no();
+// }
+
+// ask(
+//   "Вы согласны?",
+//   function() { alert("Вы согласились."); },
+//   function() { alert("Вы отменили выполнение."); }
+// );
+
+// let ask = (question, yes, no) => ? alert("Вы согласились.") : alert("Вы отменили выполнение.");
+
+// let str = 'hello'
+
+// str = str[0].toUpperCase() + str.substr(1) 
+
+// console.log(str);
+
+// str = str.split('') 
+
+// str[0] = str[0].toUpperCase() 
+
+// str = str.join('')
+
+// console.log(str)
+
+/* Возведение в куб */
+
+// let cube = (a) => {
+//   switch (a) {
+//     case 1:
+//       console.log('Monday');
+//      break;
+//     case 2:
+//       console.log('Thuesday');
+//       break;
+//     case 3:
+//       console.log('Wednesday');
+//       break;
+//     default :
+//       console.log('No');
+//   }
+// }
+
+// cube(3);
+
+ let a = {
+  keyA: Math.random(),
+  keyB: Math.random(),
+  KeyC: Math.random(), 
+ }
+
+ let summ = a.keyA + a.keyB + a.KeyC;
+
+ console.log(summ);

@@ -132,10 +132,8 @@
   }
 
   &__category-product-wrapper {
-    :first-child {
-      @include mobile_sm {
-        margin-right: 10px;
-      }
+    @include mobile_sm {
+      margin-left: 10px;
     }
   }
 }
@@ -155,6 +153,10 @@
     background-color: #0f0f0f;
     margin-bottom: 20px;
     text-align: center;
+
+    @include mobile_sm {
+      margin-right: 10px;
+    }
   }
 }
 
